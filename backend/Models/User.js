@@ -1,5 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 
+class User extends Model {}
+
 const userSchema = {
   id: {
     type: DataTypes.UUID,
@@ -12,6 +14,4 @@ const userSchema = {
   }
 };
 
-class User extends Model {}
-// export default User;
-module.exports = { User, userSchema };
+module.exports = sequelize => User.init(userSchema, { sequelize });
