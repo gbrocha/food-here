@@ -1,9 +1,9 @@
 const { DATABASE__PASSWORD } = require("../config/secret");
 
 module.exports = {
-  username: 'appfoodhere',
+  username: "appfoodhere",
   password: DATABASE__PASSWORD,
-  database: 'foodhere',
-  host: '127.0.0.1',
-  dialect: 'postgres',
-}
+  database: "foodhere",
+  host: "127.0.0.1",
+  dialect: "postgres"
+};

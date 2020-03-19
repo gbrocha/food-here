@@ -1,14 +1,14 @@
-const {DataTypes} = require('sequelize');
+const { DataTypes } = require("sequelize");
 
 const dateSchema = {
   createdAt: {
     allowNull: false,
-    type: DataTypes.DATE,
+    type: DataTypes.DATE
   },
   updatedAt: {
     allowNull: false,
-    type: DataTypes.DATE,
-  },
+    type: DataTypes.DATE
+  }
 };
 
 module.exports = dateSchema;

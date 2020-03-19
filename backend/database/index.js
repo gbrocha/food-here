@@ -1,5 +1,5 @@
 const { Sequelize } = require("sequelize");
-const config = require('../config/database')
+const config = require("../config/database");
 
 const sequelize = new Sequelize(config);
 
@@ -14,4 +14,4 @@ const connect = async () => {
   }
 };
 
-module.exports = {sequelize,connect}
+module.exports = { sequelize, connect };

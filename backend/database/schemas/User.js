@@ -1,8 +1,8 @@
-const {DataTypes} = require('sequelize');
+const { DataTypes } = require("sequelize");
 
 const userSchema = {
   id: {
-    allowNull:false,
+    allowNull: false,
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV1,
     primaryKey: true

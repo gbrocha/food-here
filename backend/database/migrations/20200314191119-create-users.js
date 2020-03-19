@@ -1,9 +1,12 @@
-let userSchema = require('../schemas/User')
-let dateSchema = require('../schemas/Date')
+const userSchema = require("../schemas/User");
+const dateSchema = require("../schemas/Date");
 
 module.exports = {
   up: (queryInterface, DataTypes) => {
-    return queryInterface.createTable("Users", {...userSchema, ...dateSchema})
+    return queryInterface.createTable("Users", {
+      ...userSchema,
+      ...dateSchema
+    });
   },
 
   down: (queryInterface, Sequelize) => {
