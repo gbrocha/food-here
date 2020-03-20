@@ -16,9 +16,10 @@ fs.readdirSync(__dirname)
     Object.assign(models, { [model.name]: model });
   });
 
-Object.values(models)
-  .filter(model => typeof model.associate === "function")
-  .forEach(model => model.associate(models));
+for (const key in models) {
+  const { associate } = models[key];
+  if (typeof associate === "function") return associate(models);
+}
 
 const db = {
   ...models,
