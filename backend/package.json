@@ -4,7 +4,7 @@
   "main": "app/index.js",
   "scripts": {
     "dev": "nodemon app/index.js",
-    "migrate": "npx sequelize db:migrate"
+    "migrate": "yarn sequelize db:migrate"
   },
   "license": "MIT",
   "devDependencies": {
